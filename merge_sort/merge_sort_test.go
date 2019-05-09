@@ -6,8 +6,9 @@ import (
 	"testing"
 )
 
-//=== RUN   TestMergeSort
-//--- PASS: TestMergeSort (0.02s)
 func TestMergeSort(t *testing.T) {
-	fmt.Println(MergeSort(utils.GenerateSlice(7)))
+	// --- PASS: TestMergeSort (0.13s)
+	fmt.Println(MergeSort(utils.GenerateSlice(100000)))
+	// --- PASS: TestMergeSort (27.37s)
+	// MergeSort(utils.GenerateSlice(100000000))
 }
